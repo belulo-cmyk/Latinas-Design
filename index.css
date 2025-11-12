@@ -1,0 +1,275 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1e1e1e;
+  background-color: #faf6ef;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #f7f3ea;
+  padding: 16px 32px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 22px;
+  font-weight: 550px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #4f739e;
+}
+
+nav button {
+  background-color: #4f739e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #3e5a80;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c6d8e5;
+  padding: 64px 96px;
+  gap: 32px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 350px;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.hero button {
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background-color: #4f739e;
+}
+
+.hero img {
+  width: 350px;
+  border-radius: 12px;
+}
+
+
+#coleccion {
+  text-align: center;
+  background-color: #f2e6ca;
+  padding: 64px 32px;
+}
+
+#coleccion h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+#coleccion p {
+  margin-bottom: 40px;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.productos figure {
+  text-align: center;
+}
+
+.productos img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.productos figcaption {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+#nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 64px 96px;
+  background-color: #f2e6ca;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+#nosotros img {
+  width: 350px;
+  border-radius: 12px;
+}
+
+#nosotros aside {
+  max-width: 400px;
+}
+
+#nosotros h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+#nosotros p {
+  margin-bottom: 24px;
+}
+
+#nosotros button {
+  background-color: #4f739e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#nosotros button:hover {
+  background-color: #1e1e1e;
+}
+
+section[aria-label="Productos destacados"] {
+  background-color: #c6d8e5;
+  text-align: center;
+  padding: 64px 32px;
+}
+
+section[aria-label="Productos destacados"] h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+section[aria-label="Productos destacados"] p {
+  margin-bottom: 32px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.galeria img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+section[aria-label="Productos destacados"] button {
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section[aria-label="Productos destacados"] button:hover {
+  background-color: #4f739e;
+}
+
+footer {
+  background-color: #55788e;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 32px 16px;
+}
+
+footer a {
+  color: #c6d8e5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .info {
+  max-width: 400px;
+}
+
+footer .social {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding: 48px 32px;
+  }
+
+  .categorias {
+    padding: 32px 16px;
+  }
+
+  .producto img {
+    width: 150px;
+  }
+}

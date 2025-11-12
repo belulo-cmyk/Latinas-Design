@@ -1,0 +1,201 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4ecd3;
+  color: #333;
+}
+
+
+header {
+  background-color: #f9f6ef;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #292525;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #55788e;
+}
+
+nav button {
+  background-color: #55788e;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.hero {
+  position: relative;
+  background-color: #d0dfe7;
+  text-align: center;
+}
+
+.hero img {
+  width: 1400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: #fff;
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.overlay h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.mision {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 100px;
+  background-color: #d0dfe7;
+  gap: 40px;
+}
+
+.mision .texto {
+  width: 45%;
+}
+
+.mision h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.mision p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.mision img {
+  width: 300px;
+  border-radius: 16px;
+}
+
+
+.que-hacemos {
+  padding: 80px 100px;
+  background-color: #f4ecd3;
+}
+
+.que-hacemos h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.item img {
+  width: 260px;
+  border-radius: 12px;
+}
+
+.card {
+  background-color: #cdd7de;
+  padding: 30px;
+  border-radius: 16px;
+  width: 320px;
+}
+
+.card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #55788e;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 32px 16px;
+}
+
+footer a {
+  color: #c6d8e5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .info {
+  max-width: 400px;
+}
+
+footer .social {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding: 48px 32px;
+  }
+
+  .categorias {
+    padding: 32px 16px;
+  }
+
+  .producto img {
+    width: 150px;
+  }
+}
